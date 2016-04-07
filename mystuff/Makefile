@@ -1,6 +1,6 @@
 
 libmystuff.so: mystuff.c
-	gcc -g -shared -fPIC -Wl,--export-dynamic $^ -o libmystuff.so
+	gcc -g -std=c99 -shared -fPIC -Wl,--export-dynamic $^ -o libmystuff.so
 
 .PHONY: install
 
